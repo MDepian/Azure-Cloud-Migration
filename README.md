@@ -15,12 +15,3 @@ Inside, you will find projects covering:
   * **PaaS (Replatform / Refactor):** Modernizing databases (Azure SQL) and web apps (Azure App Service).
 * **Migration Wave Planning:** Grouping workloads, defining readiness criteria, and executing migration schedules.
 
----
-
-## 📁 Repository Structure
-
-```text
-├── Customer-Projects/     # Real-world client migration scenarios & architectures
-├── Personal-Labs/         # Hands-on proof of concept (PoC) migration labs
-├── Assessments-&-TCO/     # Sample assessment reports, sizing, and business cases
-└── Scripts-&-Automation/  # PowerShell, Azure CLI, and ARM/Bicep deployment scripts
