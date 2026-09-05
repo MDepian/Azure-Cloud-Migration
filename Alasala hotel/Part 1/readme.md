@@ -1,8 +1,22 @@
+# SmartHotel360 Azure Migration Project - Stage 1: On-Premises & Landing Zone Setup
+
+Welcome to **Stage 1** of the **SmartHotel360 Azure Migration Project**. This repository documents the complete implementation details, step-by-step scripts, configuration files, and verification procedures for building an authentic, multi-tier on-premises datacenter environment inside Microsoft Azure using **Nested Virtualization (Hyper-V)**, alongside pre-provisioning the target **Azure Landing Zone**.
+
+---
+
+## 📌 Project Overview
+
+Before executing discovery, assessment, and migration using **Azure Migrate** in subsequent stages, Stage 1 builds the complete source environment from scratch.
+
+* **Parent Hypervisor:** Azure VM running Windows Server with Hyper-V.
+* **Nested On-Premises Network:** 4 guest virtual machines on an isolated internal NAT subnet (`192.168.10.0/24`).
+* **Target Landing Zone:** Cloud-native destination resources in Azure (`SmartHotel-RGRG`) ready for PaaS/IaaS migration.
+
 ---
 
 ## 🏗️ Architecture & Specifications
 
-#On-Premises Simulated Environment
+### On-Premises Simulated Environment
 
 | Machine Name | Role / Tier | Operating System | IP Address | Installed Services / Software |
 | :--- | :--- | :--- | :--- | :--- |
@@ -41,13 +55,13 @@
    * **Security Type:** **Standard** *(Do NOT use Trusted Launch, as it blocks nested virtualization extensions)*
 2. Disks:
    * **OS Disk:** `SmartHotelHost_OsDisk`
-   * **Data Disk:** 256 GB Data Disk (`SmartHotelHost_DataDisk`) formatted as Drive `E:` for nested VM storage.
+   * **Data Disk:** 256 GB Data Disk (`SmartHotelHost_DataDisk`) formatted as Drive `E:` for nested VM storage[cite: 1].
 
 ---
 
 ### Step 2: Configure Hyper-V & NAT Gateway
 
-RDP into `SmartHotelHost` using its Azure Public IP, open **PowerShell as Administrator**, and execute the following configuration scripts:
+RDP into `SmartHotelHost` using its Azure Public IP, open **PowerShell as Administrator**, and execute the following configuration scripts[cite: 1]:
 
 ```powershell
 # Step A: Install Hyper-V Feature and Management Tools
