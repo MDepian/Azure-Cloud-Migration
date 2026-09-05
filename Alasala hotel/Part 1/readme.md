@@ -2,7 +2,7 @@
 
 ## 🏗️ Architecture & Specifications
 
-### On-Premises Simulated Environment
+#On-Premises Simulated Environment
 
 | Machine Name | Role / Tier | Operating System | IP Address | Installed Services / Software |
 | :--- | :--- | :--- | :--- | :--- |
