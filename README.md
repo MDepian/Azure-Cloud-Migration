@@ -4,7 +4,7 @@ Welcome to my Azure Cloud Migration repository! This repository serves as a cent
 
 ---
 
-## 🎯 Repository Purpose
+##  Repository Purpose
 
 The goal of this repository is to demonstrate practical methodologies for migrating workloads to Microsoft Azure, adhering to the **Cloud Adoption Framework (CAF)**. 
 
