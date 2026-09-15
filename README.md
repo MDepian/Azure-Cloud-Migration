@@ -1,4 +1,4 @@
-# ☁️ Azure Cloud Migration Portfolio
+# Azure Cloud Migration Portfolio
 
 Welcome to my Azure Cloud Migration repository! This repository serves as a centralized showcase of end-to-end cloud migration projects, featuring real-world client scenarios and hands-on lab implementations.
 
